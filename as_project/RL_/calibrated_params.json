@@ -1,0 +1,7 @@
+{
+  "A": 136.60508359875564,
+  "k_used_for_training": 1.5,
+  "k_raw_from_lobster": 59.47328689652956,
+  "note": "k is fixed at paper default (1.5) for training. Raw LOBSTER k is recorded for reference only.",
+  "source": "LOBSTER_AAPL_2012-06-21"
+}

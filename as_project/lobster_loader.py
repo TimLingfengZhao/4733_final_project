@@ -211,7 +211,9 @@ class TransactionCostModel:
 
 
 if __name__ == "__main__":
-    loader = LobsterLoader("LOBSTER_SampleFile_AAPL_2012-06-21_10", levels=10)
+    import os
+    _script_dir = os.path.dirname(os.path.abspath(__file__))
+    loader = LobsterLoader(os.path.join(_script_dir, "LOBSTER_SampleFile_AAPL_2012-06-21_10"), levels=10)
     messages, orderbook = loader.load_day("AAPL", "2012-06-21")
     print("Loaded successfully.")
     print("Messages shape:", messages.shape)
